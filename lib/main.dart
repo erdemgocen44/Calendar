@@ -8,10 +8,11 @@ class Calendar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       home: Scaffold(
+        backgroundColor: Colors.grey[300],
         body: MoiHeadMap(),
       ),
     );
