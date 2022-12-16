@@ -1,3 +1,4 @@
+import 'package:calendar/head_map_calendar.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const Calendar());
@@ -7,13 +8,11 @@ class Calendar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Calendar'),
-        ),
+        body: MoiHeadMap(),
       ),
     );
   }
