@@ -13,7 +13,9 @@ class Calendar extends StatelessWidget {
       title: 'Material App',
       home: Scaffold(
         backgroundColor: Colors.grey[300],
-        body: Center(child: MoiHeadMap()),
+        body: const Center(
+          child: MoiHeadMap(),
+        ),
       ),
     );
   }
