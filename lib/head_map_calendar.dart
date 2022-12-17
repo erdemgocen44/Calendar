@@ -8,17 +8,21 @@ class MoiHeadMap extends StatelessWidget {
   Widget build(BuildContext context) {
     return HeatMap(
       datasets: {
-        DateTime(2021, 1, 6): 3,
-        DateTime(2021, 1, 7): 7,
-        DateTime(2021, 1, 8): 10,
-        DateTime(2021, 1, 9): 13,
-        DateTime(2021, 1, 13): 6,
+        DateTime(2022, 10, 23): 3,
+        DateTime(2022, 10, 24): 7,
+        DateTime(2022, 10, 25): 10,
+        DateTime(2022, 10, 26): 13,
+        DateTime(2022, 10, 27): 6,
       },
       startDate: DateTime.now(),
+      endDate: DateTime.now().add(
+        Duration(days: 40),
+      ),
       colorMode: ColorMode.opacity,
       showText: false,
+      size: 35,
       scrollable: true,
-      colorsets: {
+      colorsets: const {
         1: Color.fromARGB(120, 238, 216, 18),
         2: Color.fromARGB(140, 238, 216, 18),
         3: Color.fromARGB(160, 238, 216, 18),
