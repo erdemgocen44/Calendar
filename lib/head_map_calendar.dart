@@ -14,6 +14,7 @@ class MoiHeadMap extends StatelessWidget {
         DateTime(2021, 1, 9): 13,
         DateTime(2021, 1, 13): 6,
       },
+      startDate: DateTime.now(),
       colorMode: ColorMode.opacity,
       showText: false,
       scrollable: true,
