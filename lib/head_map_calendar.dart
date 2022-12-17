@@ -18,17 +18,16 @@ class MoiHeadMap extends StatelessWidget {
       showText: false,
       scrollable: true,
       colorsets: {
-        1: Colors.red,
-        3: Colors.orange,
-        5: Colors.yellow,
-        7: Colors.green,
-        9: Colors.blue,
-        11: Colors.indigo,
-        13: Colors.purple,
-      },
-      onClick: (value) {
-        ScaffoldMessenger.of(context)
-            .showSnackBar(SnackBar(content: Text(value.toString())));
+        1: Color.fromARGB(120, 238, 216, 18),
+        2: Color.fromARGB(140, 238, 216, 18),
+        3: Color.fromARGB(160, 238, 216, 18),
+        4: Color.fromARGB(180, 238, 216, 18),
+        5: Color.fromARGB(200, 238, 216, 18),
+        6: Color.fromARGB(220, 238, 216, 18),
+        7: Color.fromARGB(240, 238, 216, 18),
+        8: Color.fromARGB(260, 238, 216, 18),
+        9: Color.fromARGB(280, 238, 216, 18),
+        10: Color.fromARGB(300, 238, 216, 18),
       },
     );
   }
