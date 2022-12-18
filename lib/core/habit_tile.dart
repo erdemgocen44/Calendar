@@ -5,6 +5,12 @@ class HabitTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+      ),
+      padding: EdgeInsets.all(25),
+      child: Text('Bonjour!!'),
+    );
   }
 }

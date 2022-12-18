@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'core/habit_tile.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -9,7 +11,9 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.green[300],
       body: ListView(
         children: [
-          HabitTile(),
+          HabitTile(
+            
+          ),
         ],
       ),
     );
