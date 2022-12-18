@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class HabitTile extends StatelessWidget {
-  const HabitTile({Key? key}) : super(key: key);
+  final String habitName;
+  const HabitTile({Key? key, required this.habitName}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
