@@ -5,12 +5,26 @@ class HabitTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
+    return Padding(
+      padding: const EdgeInsets.all(15.0),
+      child: Container(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(13),
+          color: Colors.white,
+        ),
+        padding: EdgeInsets.all(25),
+        child: Row(
+          //CheckBox
+
+          children: [
+            Checkbox(
+              value: false,
+              onChanged: ((value) {}),
+            ),
+            Text('Bonjour!!'),
+          ],
+        ),
       ),
-      padding: EdgeInsets.all(25),
-      child: Text('Bonjour!!'),
     );
   }
 }

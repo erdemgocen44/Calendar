@@ -11,9 +11,9 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.green[300],
       body: ListView(
         children: [
-          HabitTile(
-            
-          ),
+          HabitTile(),
+          HabitTile(),
+          HabitTile(),
         ],
       ),
     );
