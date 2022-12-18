@@ -5,6 +5,13 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.green[300],
+      body: ListView(
+        children: [
+          HabitTile(),
+        ],
+      ),
+    );
   }
 }
