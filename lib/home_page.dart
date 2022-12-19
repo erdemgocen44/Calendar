@@ -2,9 +2,25 @@ import 'package:flutter/material.dart';
 
 import 'core/habit_tile.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  //CheckBox was tapped
+
+  void checkBoxTapped(bool? value) {
+    setState(() {
+      habitCompleted = value!;
+    });
+  }
+
+//bool to control habit completed
+
+  bool habitCompleted = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,8 +28,9 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           HabitTile(
-            habitComplete: false,
+            habitComplete: habitCompleted,
             habitName: 'Bonjour!!!',
+            onChanged: (value) => checkBoxTapped(value),
           ),
         ],
       ),
