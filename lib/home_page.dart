@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
         children: [
           HabitTile(
             habitComplete: habitCompleted,
-            habitName: 'Bonjour!!!',
+            habitName: 'Bonjour!',
             onChanged: (value) => checkBoxTapped(value),
           ),
         ],
