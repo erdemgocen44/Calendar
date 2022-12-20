@@ -12,10 +12,12 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   //data structure for todays list
 
-  List todaysHabitList = [];
+  List todaysHabitList = [
+    ['Bonjour!', false],
+    ['Lire des Livres!', false],
+  ];
 
-//bool to control habit completed
-  bool habitCompleted = false;
+
 
   //CheckBox was tapped
   void checkBoxTapped(bool? value) {
@@ -27,26 +29,12 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[300],
-      body: ListView(
-        children: [
-          HabitTile(
-            habitComplete: habitCompleted,
-            habitName: 'Bonjour!',
-            onChanged: (value) => checkBoxTapped(value),
-          ),
-          HabitTile(
-            habitComplete: habitCompleted,
-            habitName: 'Bonjour!',
-            onChanged: (value) => checkBoxTapped(value),
-          ),
-          HabitTile(
-            habitComplete: habitCompleted,
-            habitName: 'Bonjour!',
-            onChanged: (value) => checkBoxTapped(value),
-          ),
-        ],
-      ),
-    );
+        backgroundColor: Colors.green[300],
+        body: ListView.builder(itemBuilder: (context, index) {
+          return HabitTile(
+            habitName: todaysHabitList[index][0],
+            habitComplete: todaysHabitList[index][1],
+          );
+        }));
   }
 }
