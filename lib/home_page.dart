@@ -10,17 +10,20 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  //CheckBox was tapped
+  //data structure for todays list
 
+  List todaysHabitList = [];
+
+//bool to control habit completed
+  bool habitCompleted = false;
+
+  //CheckBox was tapped
   void checkBoxTapped(bool? value) {
     setState(() {
       habitCompleted = value!;
     });
   }
 
-//bool to control habit completed
-
-  bool habitCompleted = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
