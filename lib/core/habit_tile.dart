@@ -29,7 +29,7 @@ class HabitTile extends StatelessWidget {
               value: habitComplete,
               onChanged: onChanged,
             ),
-            Text('Bonjour!!'),
+            Text(habitName),
           ],
         ),
       ),
