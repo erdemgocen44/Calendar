@@ -32,6 +32,16 @@ class _HomePageState extends State<HomePage> {
             habitName: 'Bonjour!',
             onChanged: (value) => checkBoxTapped(value),
           ),
+          HabitTile(
+            habitComplete: habitCompleted,
+            habitName: 'Bonjour!',
+            onChanged: (value) => checkBoxTapped(value),
+          ),
+          HabitTile(
+            habitComplete: habitCompleted,
+            habitName: 'Bonjour!',
+            onChanged: (value) => checkBoxTapped(value),
+          ),
         ],
       ),
     );
