@@ -17,12 +17,10 @@ class _HomePageState extends State<HomePage> {
     ['Lire des Livres!', false],
   ];
 
-
-
   //CheckBox was tapped
-  void checkBoxTapped(bool? value) {
+  void checkBoxTapped(bool? value, int index) {
     setState(() {
-      habitCompleted = value!;
+      todaysHabitList[index][1] = value;
     });
   }
 
@@ -34,6 +32,7 @@ class _HomePageState extends State<HomePage> {
           return HabitTile(
             habitName: todaysHabitList[index][0],
             habitComplete: todaysHabitList[index][1],
+            onChanged: (value) => checkBoxTapped(value, index),
           );
         }));
   }
