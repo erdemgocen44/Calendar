@@ -27,13 +27,17 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.green[300],
-        body: ListView.builder(itemBuilder: (context, index) {
+      backgroundColor: Colors.green[300],
+      body: ListView.builder(
+        itemCount: todaysHabitList.length,
+        itemBuilder: (context, index) {
           return HabitTile(
             habitName: todaysHabitList[index][0],
             habitComplete: todaysHabitList[index][1],
             onChanged: (value) => checkBoxTapped(value, index),
           );
-        }));
+        },
+      ),
+    );
   }
 }
