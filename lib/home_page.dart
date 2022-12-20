@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'core/habit_tile.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,6 +12,7 @@ class _HomePageState extends State<HomePage> {
   //data structure for todays list
 
   List todaysHabitList = [
+    //[habitName, habitCompleted]
     ['Bonjour!', false],
     ['Lire des Livres!', false],
   ];
