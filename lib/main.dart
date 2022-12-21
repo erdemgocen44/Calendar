@@ -18,6 +18,7 @@ class Calendar extends StatelessWidget {
           child: HomePage(),
         ),
       ),
+      theme: ThemeData(primarySwatch: Colors.red),
     );
   }
 }
