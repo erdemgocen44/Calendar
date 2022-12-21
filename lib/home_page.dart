@@ -1,3 +1,4 @@
+import 'package:calendar/core/moi_fab.dart';
 import 'package:flutter/material.dart';
 import 'core/habit_tile.dart';
 
@@ -26,13 +27,13 @@ class _HomePageState extends State<HomePage> {
   }
 
 //created new habit
-void createdNewHabit(){}
-
+  void createdNewHabit() {}
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[300],floatingActionButton: FloatingActionButton(),
+      backgroundColor: Colors.green[300],
+      floatingActionButton: MyFloatingActionButton(),
       body: ListView.builder(
         itemCount: todaysHabitList.length,
         itemBuilder: (context, index) {
