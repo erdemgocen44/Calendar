@@ -15,6 +15,7 @@ class _HomePageState extends State<HomePage> {
     //[habitName, habitCompleted]
     ['Bonjour!', false],
     ['Lire des Livres!', false],
+    ['Ecrit code!', false],
   ];
 
   //CheckBox was tapped
@@ -24,10 +25,14 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+//created new habit
+void createdNewHabit(){}
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[300],
+      backgroundColor: Colors.green[300],floatingActionButton: FloatingActionButton(),
       body: ListView.builder(
         itemCount: todaysHabitList.length,
         itemBuilder: (context, index) {
