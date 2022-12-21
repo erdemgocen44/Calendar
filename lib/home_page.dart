@@ -33,7 +33,9 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.green[300],
-      floatingActionButton: MyFloatingActionButton(),
+      floatingActionButton: MyFloatingActionButton(
+        onPressed: createdNewHabit,
+      ),
       body: ListView.builder(
         itemCount: todaysHabitList.length,
         itemBuilder: (context, index) {
