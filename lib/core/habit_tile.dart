@@ -17,10 +17,10 @@ class HabitTile extends StatelessWidget {
       padding: const EdgeInsets.all(15.0),
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(13),
+          borderRadius: BorderRadius.circular(15),
           color: Colors.white,
         ),
-        padding: EdgeInsets.all(25),
+        padding: const EdgeInsets.all(25),
         child: Row(
           //CheckBox
 
