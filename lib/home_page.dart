@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[300],
+      backgroundColor: Color.fromARGB(255, 136, 211, 140),
       floatingActionButton: MyFloatingActionButton(
         onPressed: createdNewHabit,
       ),
