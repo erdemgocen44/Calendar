@@ -27,7 +27,9 @@ class _HomePageState extends State<HomePage> {
   }
 
 //created new habit
-  void createdNewHabit() {}
+  void createdNewHabit() {
+    showDialog(context: context, builder: builder)
+  }
 
   @override
   Widget build(BuildContext context) {
