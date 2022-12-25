@@ -10,6 +10,7 @@ class EnterNewHabitBox extends StatelessWidget {
       actions: [
         MaterialButton(
           onPressed: () {},
+          child: Text('Save'),
         ),
       ],
     );
