@@ -5,6 +5,13 @@ class EnterNewHabitBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return AlertDialog(
+      content: TextField(),
+      actions: [
+        MaterialButton(
+          onPressed: () {},
+        ),
+      ],
+    );
   }
 }

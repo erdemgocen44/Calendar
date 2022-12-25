@@ -1,6 +1,7 @@
 import 'package:calendar/core/moi_fab.dart';
 import 'package:flutter/material.dart';
 import 'core/habit_tile.dart';
+import 'core/new_habit_box.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
