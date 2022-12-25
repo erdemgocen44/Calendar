@@ -28,7 +28,10 @@ class _HomePageState extends State<HomePage> {
 
 //created new habit
   void createdNewHabit() {
-    showDialog(context: context, builder: builder)
+
+//show alert dialog for user to enter the new habit details
+
+    showDialog(context: context, builder: (context){return AlertDialog()})
   }
 
   @override
