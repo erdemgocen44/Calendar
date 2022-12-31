@@ -9,7 +9,11 @@ class EnterNewHabitBox extends StatelessWidget {
       backgroundColor: Colors.grey[800],
       content: TextField(
         decoration: InputDecoration(
-          enabledBorder: OutlineInputBorder(),
+          enabledBorder: OutlineInputBorder(
+            borderSide: BorderSide(
+              color: Colors.white,
+            ),
+          ),
         ),
       ),
       actions: [
