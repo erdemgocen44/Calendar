@@ -28,15 +28,25 @@ class _HomePageState extends State<HomePage> {
   }
 
 //created new habit
+  final _newHabitNameController = TextEditingController();
   void createdNewHabit() {
 //show alert dialog for user to enter the new habit details
 
     showDialog(
-        context: context,
-        builder: (context) {
-          return EnterNewHabitBox();
-        });
+      context: context,
+      builder: (context) {
+        return EnterNewHabitBox(
+          controller: _newHabitNameController,
+          onCancel: cancelNewHabit,
+          onSave: saveNewHabit,
+        );
+      },
+    );
   }
+
+  //save new habit
+
+  //cancel new habit
 
   @override
   Widget build(BuildContext context) {
