@@ -12,6 +12,9 @@ class Calendar extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+      ),
       home: Scaffold(
         backgroundColor: Colors.grey[300],
         body: const Center(

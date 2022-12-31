@@ -13,7 +13,15 @@ class EnterNewHabitBox extends StatelessWidget {
           color: Colors.black87,
           onPressed: () {},
           child: Text(
-            'Save Us',
+            'Save',
+            style: TextStyle(color: Colors.white),
+          ),
+        ),
+        MaterialButton(
+          color: Colors.black87,
+          onPressed: () {},
+          child: Text(
+            'Cancel',
             style: TextStyle(color: Colors.white),
           ),
         ),
