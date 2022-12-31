@@ -47,6 +47,9 @@ class _HomePageState extends State<HomePage> {
   //save new habit
 
   //cancel new habit
+  void cancelNewHabit() {
+    Navigator.of(context).pop();
+  }
 
   @override
   Widget build(BuildContext context) {
