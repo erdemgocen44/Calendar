@@ -8,6 +8,7 @@ class EnterNewHabitBox extends StatelessWidget {
     return AlertDialog(
       backgroundColor: Colors.grey[800],
       content: const TextField(
+        style: TextStyle(color: Colors.white),
         decoration: InputDecoration(
           enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(
