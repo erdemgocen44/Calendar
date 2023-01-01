@@ -19,7 +19,11 @@ class HabitTile extends StatelessWidget {
       child: Slidable(
         endActionPane: const ActionPane(
           motion: StretchMotion(),
-          children: [],
+          children: [
+            //Select option
+
+            //Delete option
+          ],
         ),
         child: Container(
           decoration: BoxDecoration(
