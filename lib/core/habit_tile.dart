@@ -18,9 +18,9 @@ class HabitTile extends StatelessWidget {
       padding: const EdgeInsets.all(13.0),
       child: Slidable(
         endActionPane: ActionPane(
-          motion: StretchMotion(),
+          motion: const StretchMotion(),
           children: [
-            //Select option
+            //setting option
             SlidableAction(
               onPressed: (context) {},
               backgroundColor: Colors.grey.shade800,
