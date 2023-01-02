@@ -1,19 +1,22 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 
 class HabitTile extends StatelessWidget {
   final String habitName;
   final bool habitComplete;
+  final Function(bool?)? onChanged;
   final Function(BuildContext)? settingTapped;
   final Function(BuildContext)? deleteTapped;
 
-  final Function(bool?)? onChanged;
-  const HabitTile(
-      {Key? key,
-      required this.habitName,
-      required this.habitComplete,
-      this.onChanged})
-      : super(key: key);
+  const HabitTile({
+    Key? key,
+    required this.habitName,
+    required this.habitComplete,
+    this.onChanged,
+    this.settingTapped,
+    this.deleteTapped,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
