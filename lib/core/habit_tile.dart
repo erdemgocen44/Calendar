@@ -18,17 +18,26 @@ class HabitTile extends StatelessWidget {
       padding: const EdgeInsets.all(13.0),
       child: Slidable(
         endActionPane: ActionPane(
-          motion: const StretchMotion(),
+          motion: StretchMotion(),
           children: [
             //setting option
             SlidableAction(
+              borderRadius: BorderRadius.circular(15),
               //Bu widget ile kaydırarak maillerde olduğu gibi işlem yaparız par exemple: silme, arşivleme, başka dosyaya taşıma
               onPressed: (context) {},
               backgroundColor: Colors.grey.shade800,
               icon: Icons.settings,
-            )
+            ),
 
             //Delete option
+
+              SlidableAction(
+              borderRadius: BorderRadius.circular(15),
+              //Bu widget ile kaydırarak maillerde olduğu gibi işlem yaparız par exemple: silme, arşivleme, başka dosyaya taşıma
+              onPressed: (context) {},
+              backgroundColor: Colors.redAccent,
+              icon: Icons.settings,
+            ),
           ],
         ),
         child: Container(
