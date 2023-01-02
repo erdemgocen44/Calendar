@@ -22,6 +22,7 @@ class HabitTile extends StatelessWidget {
           children: [
             //setting option
             SlidableAction(
+              //Bu widget ile kaydırarak maillerde olduğu gibi işlem yaparız par exemple: silme, arşivleme, başka dosyaya taşıma
               onPressed: (context) {},
               backgroundColor: Colors.grey.shade800,
               icon: Icons.settings,
